@@ -1,0 +1,316 @@
+.post {
+	border-radius: 10px;
+	background-color: $color-white;
+	position: relative;
+	font-family: $font-primary;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	outline: none;
+	margin-bottom: 30px;
+
+	&-img {
+		display: block;
+		background: $post-tosca;
+		height: 160px;
+		width: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	&-title {
+		font-family: $font-secondary;
+		font-weight: 700;
+		letter-spacing: 0.4px;
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 20px;
+		min-height: 48px;
+		
+		a {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+		}
+	}
+
+	&-cat {
+		font-size: 12px;
+		font-weight: 600;
+		color: $color-b5;
+		transition: all ease .3s;
+		margin-left: auto;
+		line-height: 36px;
+	}
+
+	&-ava img {
+		min-width: 36px;
+		width: 36px;
+		height: 36px;
+		object-fit: cover;
+		border-radius: 100%;
+		margin-right: 12px;
+	}
+
+	&-meta {
+		display: flex;
+	}
+
+	&-date {
+		font-size: 10px;
+		line-height: 24px;
+		color: $color-69;
+		display: block;
+	}
+
+	.author-name {
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 500;
+		display: block;
+	}
+
+	&-heading {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&-box {
+		background-color: $color-white;
+		position: relative;
+		padding: 15px;
+	}
+
+	&-loadmore {
+		margin-top: 20px;
+		text-align: right;
+	}
+
+	&-featured {
+		background-color: $post-tosca;
+		border-radius: 10px;
+		width: 100%;
+		height: 360px;
+		margin-bottom: 40px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&-img {
+			height: 120px;
+		}
+
+		&-title {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+
+		&-cat {
+			transform: translateY(10px);
+		}
+
+		&-loadmore {
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		&-featured {
+			height: 200px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/*Single Post*/
+/*-------------------*/
+.article-post {
+	p, h2 {
+		margin-bottom: 20px;
+	}
+
+	p + h2 {
+		margin-top: 40px;
+	}
+
+	@media (max-width: 767px) {
+		p + h2 {
+			margin-top: 30px;
+		}
+
+		h2 {
+			font-size: 18px;
+		}
+	}
+}
+
+.page-inside {
+	margin-bottom: 60px;
+
+	.author-desc {
+		font-size: 12px;
+		line-height: 24px;
+		color: $color-69;
+		margin-top: 4px;
+		display: block;
+	}
+
+	.post-published {
+		font-size: 12px;
+		color: $color-69;
+		font-weight: 400;
+	}
+
+	.post-share {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+
+		span {
+			margin-right: 18px;
+		}
+	}
+
+	.post-reply {
+		color: $color-92;
+		border-left: 1px solid $color-b5;
+		padding-left: 24px;
+		margin-left: 10px;
+
+		span {
+			margin-left: 10px;
+		}
+	}
+
+	.post-heading {
+		align-items: center;
+		font-family: $font-primary;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		color: $color-92;
+		margin-bottom: 65px;
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 767px) {
+		.author-desc {
+			font-size: 10px;
+			margin: 0;
+		}
+
+		.post-published {
+			font-size: 10px;
+			line-height: 20px;
+			margin-bottom: 15px;
+			width: 100%;
+		}
+
+		.post-share {
+			margin-left: 0;
+
+			span {
+				margin-right: 11px;
+				font-size: 12px;
+			}
+
+			li {
+				margin: 0 7px;
+			}
+		}
+
+		.post-reply {
+			padding-left: 15px;
+			margin: 0 auto 0 15px;
+		}
+
+		.post-heading {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.page-post .page-inside {
+	.author-name {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 500;
+	}
+
+	.post-ava img {
+		width: 56px;
+		height: 56px;
+		margin-right: 24px;
+	}
+
+	.post-meta {
+		margin-bottom: 38px;
+	}
+
+	@media (max-width: 767px) {
+		.author-name {
+			font-size: 12px;
+		}
+		
+		.post-ava img {
+			min-width: 32px;
+			width: 32px;
+			height: 32px;
+			margin-right: 15px;
+		}
+
+		.post-meta {
+			margin-bottom: 12px;
+		}
+	}
+}
+
+.post-related.section {
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+
+	.style {
+		&-dots {
+			top: -115px;
+			right: -9px;
+			left: auto;
+			bottom: auto;
+		}
+
+		&-ellipse {
+			right: -95px;
+			top: -77px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding-top: 20px;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+		border: 0;
+
+		.style {
+			&-dots {
+			    right: 0;
+				top: -85px;
+			}
+
+			&-ellipse {
+			    width: 96px;
+			    right: -10px;
+			    top: -30px;
+			}
+		}
+	}
+}

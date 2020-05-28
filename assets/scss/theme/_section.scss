@@ -1,0 +1,44 @@
+.section {
+	padding: 60px 0;
+	border-bottom: 1px solid #E2E2EA;
+	position: relative;
+
+	&-title {
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: 600;
+		margin-bottom: 20px;
+		color: $color-17;
+	}
+
+	&-subtitle {
+		font-size: 14px;
+		line-height: 16px;
+		color: $color-69;
+	}
+
+	&-heading {
+		font-family: $font-primary;
+		margin-bottom: 40px;
+	}
+
+	&.no-border {
+		border: 0;
+	}
+
+	@media (max-width: 767px) {
+		&-title {
+			font-size: 18px;
+			margin-bottom: 8px;
+		}
+
+		&-subtitle {
+			font-size: 12px;
+			line-height: 24px;
+		}
+
+		&-heading {
+			margin-bottom: 30px;
+		}
+	}
+}

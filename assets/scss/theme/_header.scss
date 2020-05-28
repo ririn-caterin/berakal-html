@@ -1,0 +1,284 @@
+.main-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	> li {
+		> a {
+			color: $color-92;
+			letter-spacing: 0.1px;
+			font-size: 14px;
+			line-height: 24px;
+			transition: all ease .3s;
+		}
+
+		@media (min-width: 768px) {
+			&:hover {
+				> a {
+					color: $color-17;
+				}
+
+				svg path {
+					fill: $color-17;
+				}
+			}
+		}
+	}
+}
+
+.megamenu {
+	&-link span {
+		margin-right: 16px;
+	}
+
+	&-title {
+		font-weight: 500;
+		color: $color-17;
+		font-size: 14px;
+		line-height: 21px;
+		margin-bottom: 10px;
+		transition: all ease .3s;
+	}
+
+	&-desc {
+		font-size: 10px;
+		line-height: 15px;
+		letter-spacing: 0.1px;
+	}
+
+	&-col {
+		display: block;
+
+		img {
+			width: 100px;
+			height: 49px;
+			border-radius: 10px;
+			object-fit: cover;
+			margin-bottom: 20px;
+		}
+
+		> * {
+			display: block;
+		}
+
+		&:hover {
+			.megamenu-title {color: $color-primary;}
+		}
+	}
+
+	@media (min-width: 768px) {
+		&-container {
+			list-style-type: none;
+			display: flex;
+
+			> li {
+				flex: 0 0 16.6666666667%;
+	    		max-width: 16.6666666667%;
+	    		padding-right: 32px;
+			}
+		}
+
+		&-wrapper {
+			position: absolute;
+			top: 70px;
+			left: 0;
+			right: 0;
+			padding: 20px 0;
+			background: $color-white;
+			box-shadow: 0px 5px 10px rgba(47, 135, 252, 0.05);
+			opacity: 0;
+			visibility: hidden;
+			transition: all ease .3s;
+		}
+
+		&:hover {
+			> .megamenu-wrapper {
+				opacity: 1;
+				visibility: visible;
+				top: 60px;
+			}
+		}
+	}	
+
+	@media (max-width: 767px) {
+		&-col img,
+		&-desc {
+			display: none;
+		}
+
+		&-link {
+			font-weight: 600;
+		}
+
+		&-container {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		&-wrapper {
+			padding: 0 0 0 20px;
+			list-style-type: none;
+			margin-top: 20px;
+			border-left: 1px solid $color-e2;
+			display: none;
+
+			li + li {
+				margin-top: 15px;
+			}
+		}
+
+		.megamenu-title {
+			font-weight: 400;
+			line-height: 24px;
+			color: $color-92;
+		}
+
+		&.open .megamenu-link {
+			svg, img {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+.header {
+	font-family: $font-primary;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+
+	&-logo {
+		margin-right: 60px;
+
+		img {
+			max-height: 40px;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
+	&-inside {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&-main {
+		background-color: $color-white;
+		box-shadow: inset 0px -1px 0px rgba(226, 226, 234, 0.5);
+		position: relative;
+
+		.socmed-links {
+			margin-left: 20px;
+		}
+	}
+
+	.search {
+		margin-left: auto;
+		background: rgba(226, 226, 234, 0.5);
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		line-height: 24px;
+		padding: 7px 22px;
+		width: 200px;
+
+		input {
+			padding: 0;
+			border: 0;
+			background: transparent;
+			font-size: 12px;
+			font-family: $font-primary;
+			color: $color-92;
+			letter-spacing: 0.6px;
+			width: 100%;
+    		margin-left: 10px;
+    		outline: none;
+		}
+
+		@media (min-width: 992px) {
+			width: 240px;
+		}
+	}
+
+	&-toggle {
+		width: 24px;
+		height: 24px;
+		position: relative;
+		margin-right: 20px;
+		transition: all ease .3s;
+
+		img {
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			width: 16px;
+			height: 16px;
+		}
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&-logo img {
+			height: 40px;
+		}
+
+		&-menu {
+			order: 2;
+			width: 100%;
+		}
+
+		&-wrapper {
+			height: 56px;
+		}
+
+		form.search {
+			width: 100%;
+			margin: 0 0 20px;
+		}
+
+		.socmed-links {
+			order: 3;
+			margin-top: 30px;
+			margin-left: -10px;
+			width: 100%;
+		}
+
+		&-inside {
+			position: absolute;
+			left: 0;
+			top: 70px;
+			background: $color-white;
+			padding: 20px;
+			box-shadow: 0px 5px 10px rgba(47, 135, 252, 0.1);
+			flex-wrap: wrap;
+			transition: all ease .3s;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		&.open {
+			.header-toggle {
+				background-image: url('./../icons/header-close.png');
+
+				img {opacity: 0;}
+			}
+
+			.header-inside {
+				opacity: 1;
+				visibility: visible;
+				top: 55px;
+			}
+		}
+	}
+}

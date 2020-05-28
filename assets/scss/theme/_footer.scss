@@ -1,0 +1,93 @@
+.footer {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: $font-primary;
+	background-color: $color-primary;
+	color: $color-white;
+	padding: 70px 0 50px;
+	border-top-left-radius: 60px;
+	letter-spacing: 0.1px;
+
+	a {
+		color: $color-white;
+		transition: all ease .3s;
+
+		&:hover {opacity: .8;}
+	}
+
+	&-info img {
+		margin-bottom: 22px;
+		max-height: 40px;
+	}
+
+	&-title {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	&-menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			& + li {margin-top: 20px;}
+		}
+	}
+
+	&-copyright {
+		margin-top: 80px;
+	}
+
+	.socmed-links {
+		svg path {
+			fill: $color-white;
+		}
+
+		svg, img {
+			width: 16px;
+		}
+
+		li {margin: 0 20px 0 0;}
+	}
+
+	@media (max-width: 767px) {
+		font-size: 12px;
+		line-height: 18px;
+		border-radius: 0;
+		padding: 40px 0;
+
+		&-info {
+			margin-bottom: 40px;
+
+			img {
+				margin-bottom: 10px;
+				max-width: 100px;
+			}
+		}
+
+		&-title {
+			font-size: 14px;
+			line-height: 21px;
+			margin-bottom: 10px;
+		}
+
+		&-menu {
+			margin-bottom: 20px;
+
+			li {
+				& + li {margin-top: 10px;}
+			}
+		}
+
+		.socmed-links {
+			margin-top: 20px;
+		}
+
+		&-copyright {
+			margin-top: 30px;
+		}
+	}
+}
