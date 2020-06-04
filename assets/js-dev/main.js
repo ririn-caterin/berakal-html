@@ -1,4 +1,4 @@
-(function() {
+(function($) {
     // header toggle
     $('.header-toggle').on('click', function() {
         $('.header').toggleClass('open');
@@ -35,5 +35,22 @@
     $('.ez-toc-title-toggle').on('click', function() {
         $('.ez-toc-container nav').slideToggle();
         $('.ez-toc-container').toggleClass('open');
+    });
+
+    /* Comment
+    ------------------------------------------------------------------ */
+    $('#comments-toggle').on( 'click', function() {
+        $('.comments-container').slideDown();
+    } );
+    $('.comment-list').on( 'click', '.comment-reply', function(e) {
+        $(this).closest('.comment-detail').find('.reply-box').slideDown();
+
+        e.preventDefault();
+    });
+
+    $('.comment-list').on( 'click', '.close-form', function(e) {
+        $(this).closest('.reply-box').slideUp();
+
+        e.preventDefault();
     });
 })(jQuery);
