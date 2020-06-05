@@ -79,6 +79,20 @@
 			margin-bottom: 0;
 			padding-bottom: 0;
 		}
+
+		.reply-box {
+			display: none;
+			padding-top: 20px;
+		}
+
+		.close-form {
+			display: inline-block;
+			margin-left: 10px;
+		}
+
+		.alert-box {
+			color: #DEADA9;
+		}
 	}
 
 	@media (max-width: 767px) {

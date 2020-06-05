@@ -282,7 +282,7 @@
 				<div class="section-subtitle">Puluhan tutorial tentang web internet yang bisa langsung dipraktekan sekarang juga</div>
 			</div>
 
-			<div class="row section-postweb">
+			<div class="row section-post">
 				<div class="style style-dots"><img src="./assets/icons/var_dots.png" alt=""></div>
 				<div class="style style-ellipse"><img src="./assets/icons/var_ellipse.png" alt=""></div>
 

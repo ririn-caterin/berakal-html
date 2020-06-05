@@ -1,64 +1,84 @@
-.ez-toc {
-	&-container {
-		border: 1px solid $color-primary;
-		border-radius: 10px;
-		padding: 19px 20px;
-		display: inline-block;
-		margin-bottom: 40px;
-		min-width: 352px;
+#ez-toc-container {
+	border: 1px solid $color-primary;
+	border-radius: 10px;
+	padding: 19px 20px;
+	display: inline-block;
+	margin-bottom: 40px;
+	min-width: 352px;
+	max-width: 352px;
+	background: $color-white;
 
-		nav {
-			margin-top: 10px;
-			display: none;
-		}
-
-		&.open .ez-toc-title-toggle {
-			transform: rotate(180deg);
-		}
-
-		@media (max-width: 767px) {
-			min-width: 100px;
-			width: 100%;
-			margin-bottom: 30px;
-		}
+	a:visited {
+		color: inherit;
 	}
 
-	&-title {
-		font-weight: 500;
-		color: $color-17;
-		margin-bottom: 0;
+	&.open .ez-toc-title-toggle {
+		transform: rotate(180deg);
+	}
 
-		&-toggle {
-			width: 30px;
-			text-align: center;
-			cursor: pointer;
+	.ez-toc {
+		&-title {
+			font-weight: 500;
+			color: $color-17;
+			margin-bottom: 0;
+
+			&-toggle {
+				width: 30px;
+				text-align: center;
+				cursor: pointer;
+				background-image: url('../icons/ic_toc_arrow.png');
+				background-position: center;
+				background-repeat: no-repeat;
+
+				> * {
+					opacity: 0;
+				}
+			}
+
+			&-container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				line-height: 24px;
+
+				.ez-toc-title {
+					margin: 0;
+					font-size: inherit;
+				}
+
+				svg path {
+					fill: $color-primary;
+				}
+			}
 		}
 
-		&-container {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			line-height: 24px;
+		&-list {
+			list-style-type: none;
+			padding: 0;
 
-			.ez-toc-title {margin: 0;}
+			li {
+				font-size: 14px;
+				line-height: 32px;
+				color: $color-44;
+				margin: 10px 0 0;
+			}
 
-			svg path {
-				fill: $color-primary;
+			a {
+				transition: all ease .3s;
+			}
+
+			@media (max-width: 767px) {
+				li {
+					font-size: 12px;
+					line-height: 28px;
+				}
 			}
 		}
 	}
 
-	&-list {
-		padding-left: 0;
-		font-size: 14px;
-		line-height: 32px;
-		color: $color-44;
-		margin: 0;
-		list-style-type: none;
-
-		@media (max-width: 767px) {
-			font-size: 12px;
-			line-height: 28px;
-		}
+	@media (max-width: 767px) {
+		min-width: 100px;
+		width: 100%;
+		margin-bottom: 30px;
 	}
 }

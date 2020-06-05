@@ -137,21 +137,21 @@
 				</div>
 			</div>
 			<!-- writer articles - END -->
-
-			<!-- pagination - START -->
-			<ul class="pagination">
-				<li class="prev disabled"><a href="#"><?php include './assets/icons/ic_arrow-left.svg'; ?></a></li>
-				<li class="active"><a href="#">1</a></li>
-				<li class="numb"><a href="#">2</a></li>
-				<li class="numb"><a href="#">3</a></li>
-				<li class="numb"><a href="#">4</a></li>
-				<li class="numb"><a href="#">5</a></li>
-				<li><span>...</span></li>
-				<li class="numb"><a href="#">19</a></li>
-				<li class="next"><a href="#"><?php include './assets/icons/ic_arrow-right.svg'; ?></a></li>
-			</ul>
-			<!-- pagination - END -->
 		</div>
+
+		<!-- pagination - START -->
+		<ul class="pagination">
+			<li class="prev disabled"><a href="#"><?php include './assets/icons/ic_arrow-left.svg'; ?></a></li>
+			<li class="active"><a href="#">1</a></li>
+			<li class="numb"><a href="#">2</a></li>
+			<li class="numb"><a href="#">3</a></li>
+			<li class="numb"><a href="#">4</a></li>
+			<li class="numb"><a href="#">5</a></li>
+			<li><span>...</span></li>
+			<li class="numb"><a href="#">19</a></li>
+			<li class="next"><a href="#"><?php include './assets/icons/ic_arrow-right.svg'; ?></a></li>
+		</ul>
+		<!-- pagination - END -->
 	</div>
 </div>
 

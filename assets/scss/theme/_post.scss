@@ -136,16 +136,20 @@
 /*Single Post*/
 /*-------------------*/
 .article-post {
-	p, h2 {
+	p, h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 20px;
 	}
 
-	p + h2 {
+	p + h1,
+	p + h2,
+	p + h3 {
 		margin-top: 40px;
 	}
 
 	@media (max-width: 767px) {
-		p + h2 {
+		p + h1,
+		p + h2,
+		p + h3 {
 			margin-top: 30px;
 		}
 

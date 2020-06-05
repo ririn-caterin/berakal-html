@@ -9,22 +9,22 @@
 				</div>
 				<div class="col-md-3 col-lg-2">
 					<div class="footer-title">Kategori</div>
-					<ul class="footer-menu">
-						<li><a href="./category.php">Aplikasi</a></li>
-						<li><a href="./category.php">Mobile</a></li>
-						<li><a href="./category.php">Paket Internet</a></li>
-						<li><a href="./category.php">PC</a></li>
-						<li><a href="./category.php">Social Media</a></li>
+					<ul>
+						<li class="cat-item"><a href="./category.php">Aplikasi</a></li>
+						<li class="cat-item"><a href="./category.php">Mobile</a></li>
+						<li class="cat-item"><a href="./category.php">Paket Internet</a></li>
+						<li class="cat-item"><a href="./category.php">PC</a></li>
+						<li class="cat-item"><a href="./category.php">Social Media</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-lg-2">
 					<div class="footer-title">Informasi</div>
-					<ul class="footer-menu">
-						<li><a href="./single-page.php">Tentang Kami</a></li>
-						<li><a href="./single-page.php">Kebijakan Privasi</a></li>
-						<li><a href="./single-page.php">Disclaimer</a></li>
-						<li><a href="./single-page.php">Kirim Tulisan</a></li>
-						<li><a href="./single-page.php">Hubungi Kami</a></li>
+					<ul>
+						<li class="cat-item"><a href="./single-page.php">Tentang Kami</a></li>
+						<li class="cat-item"><a href="./single-page.php">Kebijakan Privasi</a></li>
+						<li class="cat-item"><a href="./single-page.php">Disclaimer</a></li>
+						<li class="cat-item"><a href="./single-page.php">Kirim Tulisan</a></li>
+						<li class="cat-item"><a href="./single-page.php">Hubungi Kami</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-lg-3">

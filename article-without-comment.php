@@ -64,13 +64,13 @@
 					</div>
 					<nav>
 						<ul class="ez-toc-list">
-							<li><a href="#">1. Tema dan Kustomisasi</a></li>
-							<li><a href="#">2. Font</a></li>
-							<li><a href="#">3. Mata – mata WhatsApp Web</a></li>
-							<li><a href="#">4. Penjadwalan Pesan</a></li>
-							<li><a href="#">5. Ubah Latar Belakang Utama</a></li>
-							<li><a href="#">6. Mod Privasi</a></li>
-							<li><a href="#">7. Fitur Unggulan Lainnya</a></li>
+							<li><a href="">1. Tema dan Kustomisasi</a></li>
+							<li><a href="">2. Font</a></li>
+							<li><a href="">3. Mata – mata WhatsApp Web</a></li>
+							<li><a href="">4. Penjadwalan Pesan</a></li>
+							<li><a href="">5. Ubah Latar Belakang Utama</a></li>
+							<li><a href="">6. Mod Privasi</a></li>
+							<li><a href="">7. Fitur Unggulan Lainnya</a></li>
 						</ul>
 					</nav>
 				</div>

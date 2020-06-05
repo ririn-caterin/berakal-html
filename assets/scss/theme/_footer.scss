@@ -27,13 +27,13 @@
 		margin-bottom: 20px;
 	}
 
-	&-menu {
+	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 
-		li {
-			& + li {margin-top: 20px;}
+		.cat-item {
+			& + .cat-item {margin-top: 20px;}
 		}
 	}
 
@@ -74,16 +74,17 @@
 			margin-bottom: 10px;
 		}
 
-		&-menu {
+		ul {
 			margin-bottom: 20px;
 
-			li {
-				& + li {margin-top: 10px;}
+			.cat-item {
+				& + .cat-item {margin-top: 10px;}
 			}
 		}
 
 		.socmed-links {
 			margin-top: 20px;
+			margin-bottom: 0;
 		}
 
 		&-copyright {

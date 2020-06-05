@@ -1,0 +1,11 @@
+.admin-bar {
+    .header {
+        top: 32px;
+    }
+
+    @media (max-width: 782px) {
+        .header {
+            top: 46px;
+        }
+    }
+}

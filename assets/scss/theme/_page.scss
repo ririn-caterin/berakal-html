@@ -1,6 +1,7 @@
 .page-title {
 	margin-bottom: 50px;
 	font-size: 32px;
+	line-height: 40px;
 
 	@media (max-width: 767px) {
 		font-size: 20px;
@@ -72,6 +73,10 @@
 
 .page-writer {
 	padding-top: 76px;
+
+	.page-inside {
+		margin-bottom: 0;
+	}
 
 	.post-meta__heading {
 		align-items: flex-start;
@@ -245,6 +250,20 @@
 	}
 }
 
+/*search results page*/
+/*--------------*/
+.search-results {
+	.page-content {
+		.section {
+			padding-bottom: 0;
+		}
+
+		@media (min-width: 768px) {
+			margin-bottom: 120px;
+		}
+	}
+}
+
 /*404 page*/
 /*--------------*/
 .page-404 {
@@ -261,6 +280,8 @@
 		font-size: 16px;
 		margin-top: -30px;
 	}
+
+	.page-404__content {margin-top: 0;}
 
 	@media (max-width: 767px) {
 		margin-bottom: 100px;
